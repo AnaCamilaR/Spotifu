@@ -1,0 +1,56 @@
+.playListA{
+  inline-size: 13em;
+  padding:1rem;
+  border-radius:.25rem;
+  background: var(--gray40);
+  box-sizing: border-box;
+  transition: .3s background;
+}
+
+.playListA:hover, .playListA:focus-within{
+  background:var(--gray30);
+  cursor: pointer;
+}
+
+.playListA:hover .playListA-cover button,
+ .playListA:focus-within .playListA-cover button{
+  /*display: block; para ver el boton cuando estoy posicionada sobre la imagen */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.playListA-cover img{
+  vertical-align: middle;
+  inline-size: 100%;
+  block-size: 130px;
+  object-fit: cover;
+}
+
+.playListA-cover{
+  position: relative;
+  margin-block-end: 1rem;
+  /* border-radius: .75rem; */
+  overflow: hidden;
+}
+
+.playListA button{
+  position: absolute;
+  right:.5rem;
+  bottom:.5rem;
+  /*display:none;para ocultar boton */
+  opacity: 0;
+  transform: translateY(.5rem);
+  will-change: opacity,transform;
+  transition: .3s opacity, .3s transform ;/*  para ver el bottom cuando me posiciono sobre el */
+}
+
+.playListA-title{
+  font: var(--baseFontBold);
+  color: var(--white);
+  margin: 0;
+}
+
+.playListA-description{
+  font: var(--baseFont);
+  margin: 0;
+}

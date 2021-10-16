@@ -1,0 +1,104 @@
+.layout-main-design{
+  flex: 1;
+  background: linear-gradient(rgba(47, 47, 47, 0) -35.3%, #221e1e 90%), url("../images/dua-backgroung.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.filtrar{
+  display: flex;
+}
+
+.column-titles{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.button-play{
+  font-size:0.56rem;
+  color:white;
+  background:transparent;
+  border-radius: 50%;
+  border-color: white;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  position: relative;
+  top:10px;
+  left:-40px;
+  padding-block-end:0 ;
+}
+.button-heart{
+  font-size:16px;
+  color:white;
+  inline-size:2.73rem;
+  block-size:2.68rem;
+  background:transparent;
+  border: none;
+  position: relative;
+  left:-240px;
+  padding-block-end:0 ;
+}
+
+.list-songs{
+  display: flex;
+  justify-content: space-between;
+  gap:8px;
+  left:-240px;
+  padding-block-end:0 ;
+
+
+}
+.list-content{
+   list-style: none;
+}
+
+.title{
+  flex-direction: column;
+  position: relative;
+  left:-440px;
+  top:-9px;
+}
+.artist{
+  position: relative;
+  left:-250px;
+  top:-9px;
+}
+
+.fecha{
+  position: relative;
+  left:170px;
+  top:0px;
+}
+
+.headerAlbum{
+  max-inline-size: max-content;
+  margin: 0 auto;
+  text-align: center;
+}
+.headerAlbum h1{
+  font:var(--headline1);
+  color:var(--white);
+}
+.headerAlbum h2{
+  font:var(--basefont);
+}
+
+.design-list{
+
+}
+
+.page{
+  padding-inline-end: 2rem;
+}
+
+.reproducir-album {
+  /* font: var(--button); */
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: var(--white) ;
+  border-radius: 4.4rem;
+  inline-size: 9.3rem;
+  block-size: 2rem;
+  border: none;
+}
+
